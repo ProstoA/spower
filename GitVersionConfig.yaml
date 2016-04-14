@@ -1,0 +1,3 @@
+mode: ContinuousDeployment
+continuous-delivery-fallback-tag: 'ci'
+assembly-informational-format: '{NuGetVersion}'
