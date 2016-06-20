@@ -24,7 +24,7 @@ namespace ProstoA.Data.Providers.Web {
             _response.Clear();
             _response.ContentType = fileView.ContentType;
             _response.HeaderEncoding = _contentEncoding;
-            _response.AddHeader("Content-Disposition", "attachment;filename=\"" + HttpUtility.UrlPathEncode(fileView.Title) + "\"");
+            _response.AddHeader("Content-Disposition", "attachment;filename=\"" + HttpUtility.UrlPathEncode(fileView.Title + fileView.FileExtension) + "\"");
 
             var ms = new MemoryStream();
             fileView.Write(ms);
