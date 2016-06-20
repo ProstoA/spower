@@ -22,5 +22,7 @@ namespace ProstoA.Documents.Model {
         public DateTimeOffset? Modified { get; set; }
 
         public IEnumerable<T> Data { get; }
+
+        public IEnumerable<TabularDocumentFields> Items { get; set; }
     }
 }

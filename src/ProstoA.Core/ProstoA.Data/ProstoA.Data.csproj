@@ -49,7 +49,6 @@
     <Compile Include="Model\Abstractions\IComplexDataModel.cs" />
     <Compile Include="Model\Abstractions\IDataModel.cs" />
     <Compile Include="Model\Abstractions\IDataModelFix.cs" />
-    <Compile Include="Model\Abstractions\IForm.cs" />
     <Compile Include="Model\Abstractions\IFormItem.cs" />
     <Compile Include="Model\Abstractions\IHierarchical.cs" />
     <Compile Include="Model\Abstractions\IObjectDisplay.cs" />

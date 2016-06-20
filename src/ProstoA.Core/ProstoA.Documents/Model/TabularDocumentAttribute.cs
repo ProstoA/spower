@@ -3,22 +3,23 @@ using System.Collections.Generic;
 
 using ProstoA.Data.Model.Abstractions;
 
+
 namespace ProstoA.Documents.Model {
-    public class TabularDocumentAttribute : IFormItem {
-        public static TabularDocumentAttribute Left<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+    public class TabularDocumentFields : IFormItem {
+        public static TabularDocumentFields Left<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
             var column = Make(items, title, size, getValie);
             column.ByCenter = false;
             return column;
         }
 
-        public static TabularDocumentAttribute Center<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+        public static TabularDocumentFields Center<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
             var column = Make(items, title, size, getValie);
             column.ByCenter = true;
             return column;
         }
 
-        private static TabularDocumentAttribute Make<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
-            return new TabularDocumentAttribute {
+        private static TabularDocumentFields Make<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+            return new TabularDocumentFields {
                 Title = title,
                 Size = size,
                 ByCenter = true,

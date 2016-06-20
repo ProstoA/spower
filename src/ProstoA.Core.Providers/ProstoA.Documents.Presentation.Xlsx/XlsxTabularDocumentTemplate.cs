@@ -9,8 +9,8 @@ using ProstoA.Documents.Model;
 using ProstoA.Documents.Presentation.Xlsx.Model;
 
 namespace ProstoA.Documents.Presentation.Xlsx {
-    public class TabularDocumentXlsxTemplate<T> : DocumentTemplate<TabularDocument<T>, TabularDocumentAttribute> {
-        public override IView Apply(TabularDocument<T> document, DocumentForm<TabularDocument<T>, TabularDocumentAttribute> form) {
+    public class TabularDocumentXlsxTemplate<T> : ITemplate<TabularDocument<T>> {
+        public IView Apply(TabularDocument<T> document) {
             var sharedStrings = new List<string>();
             var styles = new List<XlsxCellStyle> {
                 new XlsxCellStyle(),
@@ -20,27 +20,27 @@ namespace ProstoA.Documents.Presentation.Xlsx {
 
             var worksheets = new[] {
                 new Indexed<XlsxWorksheet>(0, new XlsxWorksheet {
-                    Title = form.Title,
+                    Title = document.Title,
                     ZoomScale = 100,
                     Layout = new XlsxLayout {
-                        Columns = form.Items.Select(x => new DocumentLayoutUnit(x.Size)),
+                        Columns = document.Items.Select(x => new DocumentLayoutUnit(x.Size)),
                         Rows = new DocumentLayoutUnit[0]
                     },
                     Data = new[] {
                         new XlsxSection(
-                            form.Items.Select((x, i) => new XlsxCell {
+                            document.Items.Select((x, i) => new XlsxCell {
                                 Row = 1,
                                 Column = i + 1,
                                 StyleIndex = 1,
                                 Data = GetCellValue(i + 1, sharedStrings),
                             }),
-                            form.Items.Select((x, i) => new XlsxCell {
+                            document.Items.Select((x, i) => new XlsxCell {
                                 Row = 2,
                                 Column = i + 1,
                                 StyleIndex = 1,
                                 Data = GetCellValue(x.Title, sharedStrings),
                             }),
-                            document.Data.SelectMany((item, i) => form.Items.Select((x, j) => new XlsxCell {
+                            document.Data.SelectMany((item, i) => document.Items.Select((x, j) => new XlsxCell {
                                 Row = i + 3,
                                 Column = j + 1,
                                 StyleIndex = x.ByCenter ? 1 : 2,

@@ -41,11 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\DocumentForm.cs" />
     <Compile Include="Model\IDocument.cs" />
     <Compile Include="Model\TabularDocument.cs" />
     <Compile Include="Model\TabularDocumentAttribute.cs" />
-    <Compile Include="Presentation\DocumentTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
