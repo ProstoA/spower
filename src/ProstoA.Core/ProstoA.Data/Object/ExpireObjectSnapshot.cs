@@ -5,7 +5,7 @@ using System.Linq;
 using ProstoA.Data.Object.Abstractions;
 
 namespace ProstoA.Data.Object {
-    public class ExpireObjectSnapshot<T> : Dictionary<IObjectIdentity<ProstoA.Data.Model.Abstractions.IDataItem<T>>, object>, IObjectSnapshot<T>, IExpire {
+    public class ExpireObjectSnapshot<T> : Dictionary<IObjectIdentity<Model.Abstractions.IDataItem<T>>, object>, IObjectSnapshot<T>, IExpire {
         private readonly IRevisionObjectIdentity<T> _identity;
 
         public ExpireObjectSnapshot(IRevisionObjectIdentity<T> identity, Period validity) {
@@ -13,7 +13,7 @@ namespace ProstoA.Data.Object {
             Validity = validity;
         }
 
-        public ExpireObjectSnapshot(IRevisionObjectIdentity<T> identity, Period validity, IDictionary<IObjectIdentity<ProstoA.Data.Model.Abstractions.IDataItem<T>>, object> data) : base(data) {
+        public ExpireObjectSnapshot(IRevisionObjectIdentity<T> identity, Period validity, IDictionary<IObjectIdentity<Model.Abstractions.IDataItem<T>>, object> data) : base(data) {
             _identity = identity;
             Validity = validity;
         }

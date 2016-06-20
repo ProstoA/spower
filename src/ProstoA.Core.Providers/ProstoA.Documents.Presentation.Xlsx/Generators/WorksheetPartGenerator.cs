@@ -6,7 +6,7 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-using ProstoA.Documents.Presentation.Abstractions;
+using ProstoA.Documents.Presentation.Xlsx.Model;
 
 namespace ProstoA.Documents.Presentation.Xlsx.Generators {
     internal sealed class WorksheetPartGenerator {

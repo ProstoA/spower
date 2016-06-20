@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using ProstoA.Documents.Model;
+using ProstoA.Data.Model.Abstractions;
 
-namespace ProstoA.Documents.Presentation.Xlsx {
+namespace ProstoA.Documents.Model {
     public class DocumentForm<TDocument, TFormItem> : IForm<TDocument> where TFormItem : IFormItem {
         public DocumentForm(string name, string title, params TFormItem[] items) {
             Name = name;

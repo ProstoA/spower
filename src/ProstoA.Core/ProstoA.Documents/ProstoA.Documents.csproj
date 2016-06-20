@@ -41,18 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\DocumentForm.cs" />
     <Compile Include="Model\IDocument.cs" />
-    <Compile Include="Model\IDocumentForm.cs" />
-    <Compile Include="Model\IDocumentFormItem.cs" />
-    <Compile Include="Presentation\Abstractions\DocumentLayoutUnit.cs" />
-    <Compile Include="Presentation\DocumentGridSystem.cs" />
-    <Compile Include="Presentation\Abstractions\IDocumentTemplate.cs" />
-    <Compile Include="Presentation\Abstractions\IDocumentView.cs" />
-    <Compile Include="Presentation\Abstractions\IDocumentLayout.cs" />
+    <Compile Include="Model\TabularDocument.cs" />
+    <Compile Include="Model\TabularDocumentAttribute.cs" />
+    <Compile Include="Presentation\DocumentTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ProstoA.Documents.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProstoA.Data\ProstoA.Data.csproj">
+      <Project>{77B2A0C2-F5AE-4178-BB4A-61E3B2517FAB}</Project>
+      <Name>ProstoA.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

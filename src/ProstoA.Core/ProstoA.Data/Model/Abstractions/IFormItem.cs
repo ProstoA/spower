@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-using ProstoA.Documents.Presentation.Abstractions;
-
-namespace ProstoA.Documents.Model {
+namespace ProstoA.Data.Model.Abstractions {
     public interface IFormItem {
         string Name { get; }
 
@@ -13,8 +11,6 @@ namespace ProstoA.Documents.Model {
         bool Disabled { get; }
 
         bool Hidden { get; }
-
-        IDocumentLayout Layout { get; }
 
         IEnumerable<IFormItem> Items { get; }
     }

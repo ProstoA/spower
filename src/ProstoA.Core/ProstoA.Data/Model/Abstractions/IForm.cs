@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ProstoA.Documents.Model {
+namespace ProstoA.Data.Model.Abstractions {
     public interface IForm<out T> {
         string Name { get; }
 

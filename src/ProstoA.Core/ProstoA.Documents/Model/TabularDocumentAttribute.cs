@@ -1,47 +1,24 @@
 using System;
 using System.Collections.Generic;
 
-using ProstoA.Documents.Model;
-using ProstoA.Documents.Presentation.Abstractions;
+using ProstoA.Data.Model.Abstractions;
 
-namespace ProstoA.Documents.Presentation.Xlsx {
-    public class ListDocument<T> : IDocument {
-        public ListDocument(string name, string title, IEnumerable<T> data) {
-            Name = name;
-            Title = title;
-            Data = data;
-        }
-
-        public string Name { get; }
-
-        public string Title { get; }
-
-        public string CreatedBy { get; set; }
-
-        public DateTimeOffset? Created { get; set; }
-
-        public string ModifiedBy { get; set; }
-
-        public DateTimeOffset? Modified { get; set; }
-
-        public IEnumerable<T> Data { get; }
-    }
-
-    public class ListDocumentColum : IFormItem {
-        public static ListDocumentColum Left<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+namespace ProstoA.Documents.Model {
+    public class TabularDocumentAttribute : IFormItem {
+        public static TabularDocumentAttribute Left<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
             var column = Make(items, title, size, getValie);
             column.ByCenter = false;
             return column;
         }
 
-        public static ListDocumentColum Center<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+        public static TabularDocumentAttribute Center<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
             var column = Make(items, title, size, getValie);
             column.ByCenter = true;
             return column;
         }
 
-        private static ListDocumentColum Make<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
-            return new ListDocumentColum {
+        private static TabularDocumentAttribute Make<T>(IEnumerable<T> items, string title, int size, Func<Value<T>, object> getValie) {
+            return new TabularDocumentAttribute {
                 Title = title,
                 Size = size,
                 ByCenter = true,
@@ -60,8 +37,6 @@ namespace ProstoA.Documents.Presentation.Xlsx {
         public bool Disabled { get; set; }
 
         public bool Hidden { get; set; }
-
-        public IDocumentLayout Layout { get; set; }
 
         public IEnumerable<IFormItem> Items { get; set; }
 

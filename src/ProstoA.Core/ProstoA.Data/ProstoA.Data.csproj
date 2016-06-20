@@ -49,10 +49,16 @@
     <Compile Include="Model\Abstractions\IComplexDataModel.cs" />
     <Compile Include="Model\Abstractions\IDataModel.cs" />
     <Compile Include="Model\Abstractions\IDataModelFix.cs" />
+    <Compile Include="Model\Abstractions\IForm.cs" />
+    <Compile Include="Model\Abstractions\IFormItem.cs" />
     <Compile Include="Model\Abstractions\IHierarchical.cs" />
     <Compile Include="Model\Abstractions\IObjectDisplay.cs" />
     <Compile Include="Model\Abstractions\IObjectIdentity.cs" />
     <Compile Include="Model\Abstractions\ISimpleDataModel.cs" />
+    <Compile Include="Presentation\FileView.cs" />
+    <Compile Include="Presentation\ITemplate.cs" />
+    <Compile Include="Presentation\IView.cs" />
+    <Compile Include="Presentation\IViewRender.cs" />
     <Compile Include="Model\Abstractions\SemanticVersion.cs" />
     <Compile Include="Model\ChangeFieldOrder.cs" />
     <Compile Include="Model\DataField.cs" />

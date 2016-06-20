@@ -4,11 +4,13 @@ using System.Linq;
 
 using DocumentFormat.OpenXml.Spreadsheet;
 
-using ProstoA.Documents.Presentation.Abstractions;
+using ProstoA.Data.Presentation;
+using ProstoA.Documents.Model;
+using ProstoA.Documents.Presentation.Xlsx.Model;
 
 namespace ProstoA.Documents.Presentation.Xlsx {
-    public class XlsxListTemplate<T> : IDocumentTemplate<ListDocument<T>, DocumentForm<ListDocument<T>, ListDocumentColum>> {
-        public IDocumentView Apply(ListDocument<T> document, DocumentForm<ListDocument<T>, ListDocumentColum> form) {
+    public class TabularDocumentXlsxTemplate<T> : DocumentTemplate<TabularDocument<T>, TabularDocumentAttribute> {
+        public override IView Apply(TabularDocument<T> document, DocumentForm<TabularDocument<T>, TabularDocumentAttribute> form) {
             var sharedStrings = new List<string>();
             var styles = new List<XlsxCellStyle> {
                 new XlsxCellStyle(),
@@ -20,7 +22,7 @@ namespace ProstoA.Documents.Presentation.Xlsx {
                 new Indexed<XlsxWorksheet>(0, new XlsxWorksheet {
                     Title = form.Title,
                     ZoomScale = 100,
-                    Layout = new DocumentGridSystem {
+                    Layout = new XlsxLayout {
                         Columns = form.Items.Select(x => new DocumentLayoutUnit(x.Size)),
                         Rows = new DocumentLayoutUnit[0]
                     },
@@ -49,9 +51,7 @@ namespace ProstoA.Documents.Presentation.Xlsx {
                 })
             };
 
-            return new XlsxDocumentView {
-                Name = document.Name,
-                Title = document.Title,
+            return new XlsxView(document.Name, document.Title) {
                 Properties = new XlsxProperties {
                     CreatedBy = document.CreatedBy,
                     Created = document.Created.GetValueOrDefault(DateTimeOffset.Now).LocalDateTime,

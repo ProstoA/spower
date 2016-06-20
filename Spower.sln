@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Spower.Providers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Operations", "src\ProstoA.Core\ProstoA.Operations\ProstoA.Operations.csproj", "{D7C9675E-EA0A-4738-A496-0136611CC0A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Data.Providers.Web", "src\ProstoA.Core.Providers\ProstoA.Data.Providers.Web\ProstoA.Data.Providers.Web.csproj", "{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{D7C9675E-EA0A-4738-A496-0136611CC0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7C9675E-EA0A-4738-A496-0136611CC0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7C9675E-EA0A-4738-A496-0136611CC0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,5 +111,6 @@ Global
 		{EA5D9CBA-EEED-49AC-BC2C-11B5A7E0B15D} = {EC61D072-1647-4ECC-A6B9-5ACE3CAECAB8}
 		{E38CDEAE-AA2F-40EE-BA86-6D987B997219} = {8D32B4D2-FC2A-454B-A789-88A4BD83411A}
 		{D7C9675E-EA0A-4738-A496-0136611CC0A3} = {EC61D072-1647-4ECC-A6B9-5ACE3CAECAB8}
+		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988} = {8D32B4D2-FC2A-454B-A789-88A4BD83411A}
 	EndGlobalSection
 EndGlobal

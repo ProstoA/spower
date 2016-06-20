@@ -4,6 +4,8 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
+using ProstoA.Documents.Presentation.Xlsx.Model;
+
 namespace ProstoA.Documents.Presentation.Xlsx.Generators {
     internal sealed class WorkbookPartGenerator {
         public WorkbookPart Do(SpreadsheetDocument package, params Indexed<XlsxWorksheet>[] worksheets) {

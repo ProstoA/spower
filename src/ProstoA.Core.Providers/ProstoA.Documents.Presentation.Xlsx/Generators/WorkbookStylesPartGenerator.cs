@@ -5,6 +5,8 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
+using ProstoA.Documents.Presentation.Xlsx.Model;
+
 namespace ProstoA.Documents.Presentation.Xlsx.Generators {
     internal sealed class WorkbookStylesPartGenerator {
         public WorkbookStylesPart Do(WorkbookPart workbookPart, params Indexed<XlsxCellStyle>[] styles) {
@@ -120,17 +122,17 @@ namespace ProstoA.Documents.Presentation.Xlsx.Generators {
             return workbookStylesPart;
         }
 
-        private OpenXmlElement Map(FontStyle style) {
+        private OpenXmlElement Map(XlsxFontStyle style) {
             switch(style) {
-                case FontStyle.Bold:
+                case XlsxFontStyle.Bold:
                     return new Bold();
 
-                case FontStyle.Italic:
+                case XlsxFontStyle.Italic:
                     return new Italic();
 
-                case FontStyle.Underline:
+                case XlsxFontStyle.Underline:
                     return new Underline();
-                case FontStyle.None:
+                case XlsxFontStyle.None:
                     break;
 
                 default:

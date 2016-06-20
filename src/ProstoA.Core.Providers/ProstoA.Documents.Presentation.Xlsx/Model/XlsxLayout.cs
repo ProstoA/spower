@@ -1,6 +1,13 @@
 using System;
+using System.Collections.Generic;
 
-namespace ProstoA.Documents.Presentation.Abstractions {
+namespace ProstoA.Documents.Presentation.Xlsx.Model {
+    public class XlsxLayout  {
+        public IEnumerable<DocumentLayoutUnit> Columns { get; set; }
+
+        public IEnumerable<DocumentLayoutUnit> Rows { get; set; }
+    }
+
     public struct DocumentLayoutUnit {
         public static readonly DocumentLayoutUnit Auto = new DocumentLayoutUnit(null);
 
