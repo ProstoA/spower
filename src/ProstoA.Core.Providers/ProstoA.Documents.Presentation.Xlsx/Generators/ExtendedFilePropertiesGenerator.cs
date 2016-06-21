@@ -8,7 +8,7 @@ using DocumentFormat.OpenXml.VariantTypes;
 
 namespace ProstoA.Documents.Presentation.Xlsx.Generators {
     internal sealed class ExtendedFilePropertiesPartGenerator {
-        public ExtendedFilePropertiesPart Do(SpreadsheetDocument package, XlsxView view) {
+        public ExtendedFilePropertiesPart Do(SpreadsheetDocument package, XlsxFileContent content) {
             var properties = new Properties();
 
             properties.AddNamespaceDeclaration("vt", "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes");
@@ -19,15 +19,15 @@ namespace ProstoA.Documents.Presentation.Xlsx.Generators {
                 new HeadingPairs(
                     MakeVector(VectorBaseValues.Variant,
                         new Variant(new VTLPSTR { Text = "Листы" }),
-                        new Variant(new VTInt32 { Text = view.Worksheets.Length.ToString() })
+                        new Variant(new VTInt32 { Text = content.Worksheets.Length.ToString() })
                         )
                     ),
                 new TitlesOfParts(
                     MakeVector(VectorBaseValues.Lpstr,
-                        view.Worksheets.Select(x => new VTLPSTR { Text = x.Value.Title })
+                        content.Worksheets.Select(x => new VTLPSTR { Text = x.Value.Title })
                         )
                     ),
-                new Company { Text = view.Properties.Company },
+                new Company { Text = content.Properties.Company },
                 new LinksUpToDate { Text = "false" },
                 new SharedDocument { Text = "false" },
                 new HyperlinksChanged { Text = "false" },

@@ -8,8 +8,8 @@ namespace ProstoA.Documents.Presentation.Xlsx.Model {
 
         public DateTime? Created { get; set; }
 
-        public string ModifiedBy { get; set; }
+        public string LastModifiedBy { get; set; }
 
-        public DateTime? Modified { get; set; }
+        public DateTime? LastModified { get; set; }
     }
 }

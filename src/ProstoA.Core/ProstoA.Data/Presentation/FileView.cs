@@ -1,15 +1,24 @@
 using System.IO;
 
 namespace ProstoA.Data.Presentation {
-    public abstract class FileView : IView {
+    public abstract class FileView : ViewBase<Stream> {
         public abstract string Name { get; }
-
-        public abstract string Title { get; }
 
         public abstract string ContentType { get; }
 
         public abstract string FileExtension { get; }
 
-        public abstract void Write(Stream stream);
+        protected abstract void Write(Stream stream);
+
+        public void WriteTo(Stream stream) {
+            Stream.Synchronized(State).CopyTo(stream);
+        }
+
+        protected override Stream CreateState() {
+            var ms = new MemoryStream();
+            Write(ms);
+            ms.Position = 0;
+            return ms;
+        }
     }
 }

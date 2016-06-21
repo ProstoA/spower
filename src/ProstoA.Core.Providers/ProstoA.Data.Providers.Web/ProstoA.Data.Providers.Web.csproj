@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpResponseFileViewRender.cs" />
+    <Compile Include="DefaultViewRenderFactory.cs" />
+    <Compile Include="HttpContextFileViewRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewRenderHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ProstoA.Core\ProstoA.Data\ProstoA.Data.csproj">

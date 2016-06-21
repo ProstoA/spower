@@ -1,3 +1,5 @@
 namespace ProstoA.Data.Presentation {
-    public interface IView { }
+    public interface IView {
+        void Compile();
+    }
 }

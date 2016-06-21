@@ -59,7 +59,8 @@
     <Compile Include="Generators\WorkbookPartGenerator.cs" />
     <Compile Include="Generators\WorkbookStylesPartGenerator.cs" />
     <Compile Include="Generators\WorksheetPartGenerator.cs" />
-    <Compile Include="XlsxView.cs" />
+    <Compile Include="XlsxFileView.cs" />
+    <Compile Include="XlsxFileContent.cs" />
     <Compile Include="XlsxTabularDocumentTemplate.cs" />
     <Compile Include="Model\XlsxProperties.cs" />
     <Compile Include="Model\XlsxSection.cs" />

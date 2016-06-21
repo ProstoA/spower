@@ -3,13 +3,10 @@ using System.Collections.Generic;
 
 namespace ProstoA.Documents.Model {
     public class TabularDocument<T> : IDocument {
-        public TabularDocument(string name, string title, IEnumerable<T> data) {
-            Name = name;
+        public TabularDocument(string title, IEnumerable<T> data) {
             Title = title;
             Data = data;
         }
-
-        public string Name { get; }
 
         public string Title { get; }
 
@@ -17,9 +14,9 @@ namespace ProstoA.Documents.Model {
 
         public DateTimeOffset? Created { get; set; }
 
-        public string ModifiedBy { get; set; }
+        public string LastModifiedBy { get; set; }
 
-        public DateTimeOffset? Modified { get; set; }
+        public DateTimeOffset? LastModified { get; set; }
 
         public IEnumerable<T> Data { get; }
 

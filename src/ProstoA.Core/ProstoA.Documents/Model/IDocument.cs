@@ -2,16 +2,14 @@
 
 namespace ProstoA.Documents.Model {
     public interface IDocument {
-        string Name { get; }
-
         string Title { get; }
 
         string CreatedBy { get; }
 
         DateTimeOffset? Created { get; }
 
-        string ModifiedBy { get; }
+        string LastModifiedBy { get; }
 
-        DateTimeOffset? Modified { get; }
+        DateTimeOffset? LastModified { get; }
     }
 }
