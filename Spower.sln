@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Data", "src\ProstoA.Core\ProstoA.Data\ProstoA.Data.csproj", "{77B2A0C2-F5AE-4178-BB4A-61E3B2517FAB}"
 EndProject
@@ -22,8 +22,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Spower", "src\Prost
 		{9EFFA055-4EDA-4529-923A-E0FA802895E5} = {9EFFA055-4EDA-4529-923A-E0FA802895E5}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Spower.TestFixture", "src\ProstoA.Spower.TestFixture\ProstoA.Spower.TestFixture.csproj", "{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Documents", "src\ProstoA.Core\ProstoA.Documents\ProstoA.Documents.csproj", "{EA5D9CBA-EEED-49AC-BC2C-11B5A7E0B15D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core.Providers", "Core.Providers", "{8D32B4D2-FC2A-454B-A789-88A4BD83411A}"
@@ -35,6 +33,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Operations", "src\ProstoA.Core\ProstoA.Operations\ProstoA.Operations.csproj", "{D7C9675E-EA0A-4738-A496-0136611CC0A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Data.Providers.Web", "src\ProstoA.Core.Providers\ProstoA.Data.Providers.Web\ProstoA.Data.Providers.Web.csproj", "{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoA.Spower.Tester", "src\ProstoA.Spower.Tester\ProstoA.Spower.Tester.csproj", "{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,12 +72,6 @@ Global
 		{2C048705-9143-4226-B88C-C3E3CEB4E035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C048705-9143-4226-B88C-C3E3CEB4E035}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C048705-9143-4226-B88C-C3E3CEB4E035}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{EA5D9CBA-EEED-49AC-BC2C-11B5A7E0B15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EA5D9CBA-EEED-49AC-BC2C-11B5A7E0B15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5D9CBA-EEED-49AC-BC2C-11B5A7E0B15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -98,6 +92,12 @@ Global
 		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F941FC46-59B2-42FB-AF61-0D9A7C6D9988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0039ADC-F9B2-438A-BC3A-AD5B665DC020}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
