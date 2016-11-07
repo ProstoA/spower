@@ -16,7 +16,7 @@ namespace ProstoA.Spower {
 #if DEBUG
             return Empty;
 #else
-            return new SPMonitoredScope(name, TraceSeverity.High);
+            return new SPMonitoredScope(name, Microsoft.SharePoint.Administration.TraceSeverity.High);
 #endif
         }
 
@@ -24,7 +24,7 @@ namespace ProstoA.Spower {
 #if DEBUG
             return Empty;
 #else
-            return new SPMonitoredScope(name, TraceSeverity.Verbose, monitors);
+            return new SPMonitoredScope(name, Microsoft.SharePoint.Administration.TraceSeverity.Verbose, monitors);
 #endif
         }
 
