@@ -117,13 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Error_CanBeNoMoreThanOne" xml:space="preserve">
-    <value>Невозможно инициализировать страницу '{0}'. Допустимо не более одного DI конструктора. Подробности https://github.com/ProstoA/spower/wiki/Dependency-Injection</value>
+  <data name="Error_MustBeOneConstructorWithParameters_HelpLink" xml:space="preserve">
+    <value>https://github.com/ProstoA/spower/wiki/Dependency-Injection</value>
   </data>
-  <data name="Error_InitializationFail" xml:space="preserve">
-    <value>Невозможно инициализировать страницу '{0}'. Возникла ошибка: '{1}'.</value>
+  <data name="Error_MustBeOneConstructorWithParameters_Message" xml:space="preserve">
+    <value>Невозможно инициализировать страницу '{page}'. Допустимо не более одного DI конструктора.</value>
   </data>
-  <data name="Error_RequiredDefaultConstructor" xml:space="preserve">
-    <value>Невозможно инициализировать страницу '{0}'. Требуется конструктор по умолчанию. Подробности https://github.com/ProstoA/spower/wiki/Dependency-Injection</value>
+  <data name="Error_NoServiceRegistered_Message" xml:space="preserve">
+    <value>No service for type '{ServiceType}' has been registered.</value>
+  </data>
+  <data name="Error_PageInitializationFail_Message" xml:space="preserve">
+    <value>Невозможно инициализировать страницу '{page}'. Возникла ошибка: {message}</value>
+  </data>
+  <data name="Error_RequireDefaultConstructor_HelpLink" xml:space="preserve">
+    <value>https://github.com/ProstoA/spower/wiki/Dependency-Injection</value>
+  </data>
+  <data name="Error_RequireDefaultConstructor_Message" xml:space="preserve">
+    <value>Невозможно инициализировать страницу '{page}'. Требуется конструктор по умолчанию.</value>
   </data>
 </root>

@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ProstoA.Spower.TestFixture")]
-[assembly: AssemblyDescription("ProstoA.Spower.TestFixture")]
+[assembly: AssemblyTitle("ProstoA.Spower.Core")]
+[assembly: AssemblyDescription("ProstoA.Spower.Core")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("#=Company#")]
 [assembly: AssemblyProduct("#=Product#")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e0039adc-f9b2-438a-bc3a-ad5b665dc020")]
+[assembly: Guid("bd494806-dcb4-41ea-9a7e-f435bb35fc3d")]
 
 // Version information for an assembly consists of the following four values:
 //

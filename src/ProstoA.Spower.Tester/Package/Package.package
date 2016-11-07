@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2dcee8d1-f79b-49ac-b2eb-8db036435df7" solutionId="2dcee8d1-f79b-49ac-b2eb-8db036435df7" resetWebServer="false" sharePointProductVersion="15.0" name="ProstoA.Spower.TestFixture" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
-  <projectItems>
-    <projectItemReference itemId="60ad0c02-2843-4aec-b725-26b871161cae" />
-    <projectItemReference itemId="b073256b-cf28-4842-b99e-c2a02ce353d2" />
-  </projectItems>
-</package>
