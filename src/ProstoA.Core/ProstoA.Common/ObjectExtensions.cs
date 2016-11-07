@@ -5,6 +5,12 @@ using System.Linq;
 using System.Runtime.ExceptionServices;
 
 namespace ProstoA {
+    public static class CollectionExtensions {
+        public static int? IndexOf<T>(this IEnumerable<T> items, Func<T, bool> predicate) {
+            return items.Select((value, index) => new { value, index }).FirstOrDefault(x => predicate(x.value))?.index;
+        }
+    }
+
     public static class ObjectExtensions {
         public static T Of<T>(this object obj) {
             return (T) obj;

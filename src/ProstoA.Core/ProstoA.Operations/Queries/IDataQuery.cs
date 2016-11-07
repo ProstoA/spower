@@ -1,4 +1,5 @@
-﻿using ProstoA.Data.Model.Abstractions;
+﻿using ProstoA.Data.Metamodel;
+using ProstoA.Data.Model;
 
 namespace ProstoA.Operations.Queries {
     public interface IDataQuery<TResult> {

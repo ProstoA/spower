@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-using ProstoA.Data.Model.Abstractions;
+using ProstoA.Data.Metamodel;
+using ProstoA.Data.Model;
 
 
 namespace ProstoA.Documents.Model {

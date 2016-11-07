@@ -1,6 +1,6 @@
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
 
-namespace ProstoA.Data.Store.Abstractions {
+namespace ProstoA.Data.Store {
     //public interface IObjectContainer<T> : IHierarchical<IObjectIdentity> {
     //    T Resolve(Object.Abstractions.IObjectIdentity<T> identity);
     //}

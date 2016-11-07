@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 
-namespace ProstoA.Data.Store.Abstractions {
+namespace ProstoA.Data.Store {
     public interface IStoreReader<in TStore> {
         object GetValue(TStore store, string name);
     }

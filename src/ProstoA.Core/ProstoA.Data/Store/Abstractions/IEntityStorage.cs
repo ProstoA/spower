@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
 
-namespace ProstoA.Data.Store.Abstractions {
+namespace ProstoA.Data.Store {
     public interface IEntityStorage {
         IDataCollection<TEntity> Collection<TEntity>() where TEntity : class;
 

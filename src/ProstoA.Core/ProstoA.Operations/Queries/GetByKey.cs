@@ -1,9 +1,8 @@
 using System;
 using System.Linq.Expressions;
 
+using ProstoA.Data.Metamodel;
 using ProstoA.Data.Model;
-using ProstoA.Data.Model.Abstractions;
-using ProstoA.Data.Object.Abstractions;
 
 namespace ProstoA.Operations.Queries {
     public class GetByKey<TKey, TModel> : IDataQuery<IDataObject> {

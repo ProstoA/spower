@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
-using ProstoA.Data.Model.Abstractions;
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
+using ProstoA.Data.Model;
 
 namespace ProstoA.Workflow {
     public interface IWorkflowState {

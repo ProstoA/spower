@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using ProstoA.Data.Store.Abstractions;
-
-
 namespace ProstoA.Data.Store {
     [Serializable]
     public class EntityReference<TKey, TEntity> : IReference<TKey, TEntity>, IEquatable<IReference<TKey, TEntity>> {
-        public static EntityReference<TKey, TEntity> Empty = new EntityReference<TKey, TEntity>(); 
+        public static EntityReference<TKey, TEntity> Empty = new EntityReference<TKey, TEntity>();
 
         public TKey Id { get; set; }
 
@@ -16,8 +13,8 @@ namespace ProstoA.Data.Store {
         }
 
         public static implicit operator EntityReference<TKey, TEntity>(TKey key) {
-            return Equals(key, default(TKey)) 
-                ? Empty 
+            return Equals(key, default(TKey))
+                ? Empty
                 : new EntityReference<TKey, TEntity> { Id = key };
         }
 

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-using ProstoA.Data.Object.Abstractions;
-
+using ProstoA.Data.Metamodel;
 
 namespace ProstoA.Data.Store {
     public class TypeDataAccessor : IDataAccessor, IDataMutator {

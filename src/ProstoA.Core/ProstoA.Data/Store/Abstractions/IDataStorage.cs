@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ProstoA.Data.Store.Abstractions {
+namespace ProstoA.Data.Store {
     public interface IDataStorage {
         IEnumerable<IDataContainer> Containers { get; }
 

@@ -1,8 +1,8 @@
 //using ProstoA.Data.Store.Abstractions;
 
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
 
-namespace ProstoA.Data.Store.Abstractions {
+namespace ProstoA.Data.Store {
     public interface IEntity<T> : IObjectIdentity<T>, IObjectReference<T> { }
 
     //public class Book : IEntity<Book> {

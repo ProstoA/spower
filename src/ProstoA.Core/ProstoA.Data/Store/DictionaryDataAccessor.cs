@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
 
 namespace ProstoA.Data.Store {
     public class DictionaryDataAccessor : IDataAccessor {

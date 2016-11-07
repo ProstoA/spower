@@ -1,4 +1,4 @@
-﻿using ProstoA.Data.Object.Abstractions;
+﻿using ProstoA.Data.Metamodel;
 
 namespace ProstoA.Operations.Queries {
     public interface IHistory<T> {

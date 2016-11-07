@@ -1,4 +1,4 @@
-using ProstoA.Data.Object.Abstractions;
+using ProstoA.Data.Metamodel;
 
 namespace ProstoA.Security {
     public interface IUserInfo : IObjectIdentity<IUserInfo>, IAuditSubject { }

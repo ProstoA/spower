@@ -1,5 +1,6 @@
 using System;
-using ProstoA.Data.Object.Abstractions;
+
+using ProstoA.Data.Metamodel;
 using ProstoA.Security;
 
 namespace ProstoA.Operations {
