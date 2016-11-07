@@ -61,11 +61,5 @@ namespace ProstoA {
         public static IEnumerable<T> AsMany<T>(this T item) {
             return new[] {item};
         }
-
-        public static IDictionary<string, object> ConvertToDictionary(this object values) {
-            return TypeDescriptor.GetProperties(values)
-                .OfType<PropertyDescriptor>()
-                .ToDictionary(prop => prop.Name, prop => prop.GetValue(values));
-        }
     }
 }

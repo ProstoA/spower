@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 
 namespace ProstoA.Operations.Commands {
-    public abstract class SimpleCommand<T, TResult> : ICommand<TResult>, ICommandHandler<T, TResult> where T : ICommand<TResult> {
+    public abstract class SimpleCommand<T, TResult> : IResultCommand<TResult>, ICommandHandler<T, TResult> where T : IResultCommand<TResult> {
         public abstract TResult Execute(ILogger logger);
 
         IOperationResult<TResult> IOperationHandler<T, IOperationResult<TResult>>.Execute(T command, ILogger logger) {

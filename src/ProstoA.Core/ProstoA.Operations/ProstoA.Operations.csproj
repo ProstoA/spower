@@ -40,12 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\ICommandHendlerAsync.cs" />
+    <Compile Include="Commands\ICommandService.cs" />
+    <Compile Include="Commands\IResultCommand.cs" />
+    <Compile Include="Commands\IUndoCommand.cs" />
+    <Compile Include="Commands\ResultCommandHandler.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Events\IEventBus.cs" />
+    <Compile Include="Events\IEventHandler.cs" />
+    <Compile Include="Events\IResultEvent.cs" />
+    <Compile Include="Events\ResultEvent.cs" />
     <Compile Include="Queries\IQuery.cs" />
     <Compile Include="Queries\IBranching.cs" />
     <Compile Include="Commands\ICommandHandler.cs" />
     <Compile Include="Queries\IHistory.cs" />
     <Compile Include="Queries\IHistoryQuery.cs" />
     <Compile Include="Queries\IQueryHandler.cs" />
+    <Compile Include="Queries\IQueryService.cs" />
     <Compile Include="Queries\ISubsetQuery.cs" />
     <Compile Include="Commands\SimpleCommand.cs" />
     <Compile Include="ICollectionOperationResult.cs" />

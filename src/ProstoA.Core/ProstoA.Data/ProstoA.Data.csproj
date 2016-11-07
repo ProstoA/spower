@@ -43,6 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Metamodel\Object\DataObjectExtensions.cs" />
+    <Compile Include="Store\Abstractions\IDataStore.cs" />
+    <Compile Include="Store\Mappers\ICollectionMapper.cs" />
+    <Compile Include="Store\Mappers\IMapper.cs" />
+    <Compile Include="Store\Mappers\IMapperResolver.cs" />
+    <Compile Include="Store\Mappers\IMappingOptions.cs" />
+    <Compile Include="Store\Mappers\IMappingService.cs" />
+    <Compile Include="Store\Mappers\MapperResolver.cs" />
+    <Compile Include="Store\Mappers\MappingExtensions.cs" />
+    <Compile Include="Store\Mappers\MappingOptions.cs" />
+    <Compile Include="Store\Mappers\MappingService.cs" />
     <Compile Include="Store\ModelBinding\IValueProvider.cs" />
     <Compile Include="Store\ModelBinding\IValueProviderResult.cs" />
     <Compile Include="Store\ModelBinding\ValueProviderResult.cs" />
@@ -62,6 +72,8 @@
     <Compile Include="Model\IShardingKey.cs" />
     <Compile Include="Metamodel\Abstractions\ISimpleDataModel.cs" />
     <Compile Include="Model\IValueObject.cs" />
+    <Compile Include="Validaton\IValidationError.cs" />
+    <Compile Include="Validaton\IValidator.cs" />
     <Compile Include="View\FileView.cs" />
     <Compile Include="View\ITemplate.cs" />
     <Compile Include="View\IView.cs" />
