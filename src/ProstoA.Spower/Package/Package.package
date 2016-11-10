@@ -2,5 +2,6 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ccabf60a-e95f-42d3-9e5d-bcb3d1fa52d4" solutionId="ccabf60a-e95f-42d3-9e5d-bcb3d1fa52d4" resetWebServer="false" sharePointProductVersion="15.0" name="ProstoA.Spower" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
     <projectOutputAssembly location="ProstoA.Spower.Core.dll" deploymentTarget="WebApplication" projectPath="..\ProstoA.Spower.DependencyInjection\ProstoA.Spower.Core.csproj" />
+    <projectOutputAssembly location="ProstoA.Spower.Standard.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\ProstoA.Spower.Standard\ProstoA.Spower.Standard.csproj" />
   </assemblies>
 </package>

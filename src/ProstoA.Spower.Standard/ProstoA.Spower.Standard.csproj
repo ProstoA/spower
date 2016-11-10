@@ -63,12 +63,11 @@
     <None Include="ProstoA.Spower.Standard.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProstoA.Core\ProstoA.Data\ProstoA.Data.csproj">
+    <ProjectReference Include="..\ProstoA.Core\src\ProstoA.Data\ProstoA.Data.csproj">
       <Project>{77b2a0c2-f5ae-4178-bb4a-61e3b2517fab}</Project>
       <Name>ProstoA.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
