@@ -76,9 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="key.snk" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
     <None Include="Package\Package.package">
       <PackageId>ccabf60a-e95f-42d3-9e5d-bcb3d1fa52d4</PackageId>
     </None>
