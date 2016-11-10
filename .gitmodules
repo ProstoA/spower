@@ -1,0 +1,3 @@
+[submodule "src/ProstoA.Core"]
+	path = src/ProstoA.Core
+	url = https://github.com/ProstoA/core.git
